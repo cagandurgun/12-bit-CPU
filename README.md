@@ -1,42 +1,55 @@
 # 12-bit CPU
-Bu README dosyası, basit ve sınırlı yeteneklere sahip 12-bit Harvard mimarisi kullanan deneysel bir işlemcinin özelliklerini ve temel buyruk kümesini açıklamaktadır. 
 
-## Genel Özellikler 
+This README file describes the features and basic instruction set of an experimental 12-bit processor using Harvard architecture, developed and tested in Logisim simulation environment.
 
-- 12-bit veri yolu
-- Harvard mimarisi (ayrı veri ve buyruk bellekleri)
-- Tek vuruşlu çalışma
-- 49 KB veri belleği
-- 25 MB buyruk belleği
+## General Features
 
-## Buyruk Kümesi İşlemci, 6 temel buyruğa sahiptir: 
+* 12-bit data bus
+* Harvard architecture (separate data and instruction memories)
+* Single cycle operation
+* 49 KB data memory
+* 25 MB instruction memory
 
-1. TOPLAMA (TOP) - opcode: 000
-2. ÇIKARMA (CIK) - opcode: 001
+## Instruction Set
+The processor has 6 basic instructions:
+
+1. ADD (TOP) - opcode: 000
+2. SUBTRACT (CIK) - opcode: 001
 3. NOT AND (NND) - opcode: 010
-4. YÜKLEME (YUK) - opcode: 011
-5. SAKLAMA (SAK) - opcode: 100
-6. EŞİTSE DALLAN (ESD) - opcode: 101
+4. LOAD (YUK) - opcode: 011
+5. STORE (SAK) - opcode: 100
+6. BRANCH IF EQUAL (ESD) - opcode: 101
 
-## Buyruk Formatı 
+## Instruction Format
 
-Her buyruk 12 bit uzunluğundadır ve şu formatta düzenlenmiştir: 
+Each instruction is 12 bits long and arranged in the following format:
 
-``` [opcode (3 bit)] [KY1 (3 bit)] [KY2/ANL (3 bit)] [HY/ANL (3 bit)] ``` 
+```[opcode (3 bits)] [SR1 (3 bits)] [SR2/ADDR (3 bits)] [DR/ADDR (3 bits)]```
 
-- KY1, KY2: Kaynak yazmaçları - HY: Hedef yazmacı
-- ANL: Adres veya dallanma için kullanılan alan
+* SR1, SR2: Source registers
+* DR: Destination register
+* ADDR: Address field used for addressing or branching
 
-## Özel Notlar 
+## Development Environment
 
-- ESD (EŞİTSE DALLAN) buyruğu, mevcut konumdan -24 ile +24 arasında buyruk atlayabilme yeteneğine sahiptir.
-- YÜKLEME ve SAKLAMA buyrukları, veri belleğine erişim için özel adres hesaplama yöntemleri kullanır.
+The CPU was designed and simulated using Logisim, a digital logic simulator. All circuits and components were tested in this environment to verify proper functionality.
 
-## Test Senaryoları README dosyasında, işlemcinin temel buyruklarını test etmek için örnek test senaryoları bulunmaktadır: 
+## Special Notes
 
-1. Toplama Testi
-2. Çıkarma Testi
-3. Not And Testi
-4. Eşitse Dallan Testi
+* The BRANCH IF EQUAL instruction can jump between -24 and +24 instructions from the current position
+* LOAD and STORE instructions use special address calculation methods for data memory access
 
-Bu testler, işlemcinin temel işlevselliğini doğrulamak için kullanılabilir.
+## Test Scenarios
+
+The following test scenarios were implemented and verified in Logisim:
+
+1. Addition Test
+2. Subtraction Test
+3. Not And Test
+4. Branch If Equal Test
+
+These tests can be used to validate the basic functionality of the processor in the simulation environment.
+
+---
+
+*Note: All development and testing processes were carried out using Logisim circuit simulation tool.*
