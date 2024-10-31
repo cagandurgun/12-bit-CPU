@@ -56,6 +56,6 @@ Aşağıdaki test senaryoları Logisim'de uygulanmış ve doğrulanmıştır:
 
 ## Daha Fazla Bilgi
 
-Bu işlemcinin mimarisi, buyruk kümesi ve diğer özellikleri hakkında daha ayrıntılı bilgi için [nesil 1](./nesil 1/ nesil 1.pdf) dosyasına göz atabilirsiniz.
+Bu işlemcinin mimarisi, buyruk kümesi ve diğer özellikleri hakkında daha ayrıntılı bilgi için [nesil 1](nesil 1/ nesil 1.pdf) dosyasına göz atabilirsiniz.
 
 ---
