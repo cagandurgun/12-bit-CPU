@@ -2,6 +2,7 @@
 # 12-bit İşlemci
 
 Bu README dosyası, Harvard mimarisini kullanan deneysel bir 12-bit işlemcinin özelliklerini ve temel komut setini açıklamaktadır.
+Ayrıntılı bilgi için [nesil 1](nesil%201/nesil%201.pdf) dosyasına göz atabilirsiniz.
 
 ---
 
@@ -51,11 +52,5 @@ Aşağıdaki test senaryoları Logisim'de uygulanmış ve doğrulanmıştır:
 ## Geliştirme Ortamı
 
 İşlemci, bir dijital mantık simülatörü olan Logisim (http://www.cburch.com/logisim/) kullanılarak tasarlanmış ve simüle edilmiştir. Tüm devreler ve bileşenlerin işlevselliği bu ortamda test edilmiştir.
-
----
-
-## Daha Fazla Bilgi
-
-Bu işlemcinin mimarisi, buyruk kümesi ve diğer özellikleri hakkında daha ayrıntılı bilgi için [işlemci özellikleri PDF dosyasına](nesil%201/nesil%201.pdf) göz atabilirsiniz.
 
 ---
