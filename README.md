@@ -2,6 +2,8 @@
 
 Bu README dosyası, Harvard mimarisini kullanan deneysel bir 12-bit işlemcinin özelliklerini ve temel komut setini açıklamaktadır.
 
+---
+
 ## Genel Özellikler
 
 * 12-bit veri yolu
@@ -9,6 +11,8 @@ Bu README dosyası, Harvard mimarisini kullanan deneysel bir 12-bit işlemcinin 
 * Tek vuruşluk 
 * 49 KB veri belleği
 * 25 MB komut belleği
+
+---
 
 ## Buyruk Biçimi
 
@@ -30,9 +34,7 @@ Buyruk kümesi 6 temel buyruğa sahiptir:
 5. SAKLA (SAK) - işlem kodu: 100
 6. EŞİTSE DALLAN (ESD) - işlem kodu: 101
 
-## Geliştirme Ortamı
-
-İşlemci, bir dijital mantık simülatörü olan Logisim (http://www.cburch.com/logisim/) kullanılarak tasarlanmış ve simüle edilmiştir. Tüm devreler ve bileşenlerin işlevselliği bu ortamda test edilmiştir.
+---
 
 ## Test Senaryoları
 
@@ -42,5 +44,11 @@ Aşağıdaki test senaryoları Logisim'de uygulanmış ve doğrulanmıştır:
 2. Çıkarma Testi
 3. VeDeğil Testi
 4. Eşitse Dallan Testi
+
+---
+
+## Geliştirme Ortamı
+
+İşlemci, bir dijital mantık simülatörü olan Logisim (http://www.cburch.com/logisim/) kullanılarak tasarlanmış ve simüle edilmiştir. Tüm devreler ve bileşenlerin işlevselliği bu ortamda test edilmiştir.
 
 ---
